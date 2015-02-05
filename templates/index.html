@@ -1,0 +1,11 @@
+<!doctype html>
+<title>{{ string }}</title>
+<h1>{{ string }}</h1>
+<!-- All links -->
+<ul>
+{% for links in list_links %}
+	<li><a href="/view/{{ links[0] }}" alt="{{ links[3] }}" rel="nofollow">{{ links[1] }}</a> <a href="/edit_form/{{links[0]}}" alt="">Edit</a> <a href="/del/{{links[0]}}" alt="">Delete</a></li>
+{% endfor %}
+</ul>
+<a href="/add_form" alt="">Add new links</a>
+<a href="/logout" alt="">Exit user</a>
