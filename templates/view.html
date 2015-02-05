@@ -1,0 +1,11 @@
+<h1>View id: {{id}}</h1>
+{% if error_message %}
+    <p class="error" style="color: red">{{ error_message }}</p>
+{% endif %}
+<p>ID:{{list_links[0]}}<p>
+<p>Links: <a href="http://{{list_links[1]}}" alt="{{list_links[2]}}" rel="nofollow">{{list_links[3]}}</a></p>
+<p>Label: {{list_links[2]}}</p>
+<p>Description: {{list_links[3]}}</p>
+<a href="/" alt="">Home</a>
+<a href="/add_form" alt="">Add new links</a>
+<a href="/edit_form/{{list_links[0]}}" alt="">Edit</a>
