@@ -1,0 +1,15 @@
+<h1>Edit id: {{id}}</h1>
+{% if error_message %}
+    <p class="error" style="color: red">{{ error_message }}</p>
+{% endif %}
+<form action="/edit_form/{{list_links[0]}}" method="post">
+	<label>Link: </label>
+	<input name="link" type="text" size="45" maxlength="45" value="{{list_links[1]}}"><br />
+	<label>Label: </label>
+	<input name="label" type="text" size="25" maxlength="25" value="{{list_links[2]}}"><br />
+	<link>Description:</link>
+	<textarea cols=50 rows=8 name="description">{{list_links[3]}}</textarea><br />
+	<input type="submit" name="submit" value="Send">
+</form>
+<a href="/" alt="">Home</a>
+<a href="/add_form" alt="">Add new links</a>
