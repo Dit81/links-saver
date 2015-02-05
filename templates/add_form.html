@@ -1,0 +1,15 @@
+<h1>Add:</h1>
+{% if error_message %}
+    <p class="error" style="color: red">{{ error_message }}</p>
+{% endif %}
+<form action="/add_form" method="post">
+	<label>Link: </label>
+	<input name="link" type="text" size="45" maxlength="45" value=""><br />
+	<label>Label: </label>
+	<input name="label" type="text" size="25" maxlength="25" value=""><br />
+	<link>Description:</link>
+	<textarea cols=50 rows=8 name="description"></textarea><br />
+	<input type="submit" name="submit" value="Send">
+</form>
+<a href="/" alt="">Home</a>
+<a href="/add_form" alt="">Add new links</a>
